@@ -1,0 +1,11 @@
+version: "3.3"
+services:
+  emby:
+    image: emby/embyserver:latest
+    container_name: emby
+    ports:
+      - "8096:8096"
+    volumes:
+      - /opt/docker/emby/config:/config
+      - /mnt/media:/media
+    restart: unless-stopped
