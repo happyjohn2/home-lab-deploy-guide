@@ -1,0 +1,6 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# accounting data
+accounting-app/records.csv
